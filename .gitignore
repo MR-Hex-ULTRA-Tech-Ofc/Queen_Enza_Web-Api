@@ -1,0 +1,17 @@
+node_modules
+auth_info*.json
+EnzaWeb_auth_info*
+EnzaWeb_store*.json
+output.csv
+*/.DS_Store
+.DS_Store
+.env
+browser-messages.json
+decoded-ws.json
+lib
+docs
+browser-token.json
+Proxy
+messages*.json
+test.ts
+TestData
