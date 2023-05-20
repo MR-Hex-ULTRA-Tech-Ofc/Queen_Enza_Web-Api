@@ -10,14 +10,6 @@ const useStore = !process.argv.includes('--no-store')
 const doReplies = !process.argv.includes('--no-reply')
 
 // Mr Hex ULTRA Tech
-/*
-const packageJSON = require('../../../package.json');
-
-if (packageJSON.author != 'Mr Hex ULTRA Tech' || packageJSON.name !== 'queen_enza-multi_device') {
-    process.exit();
-throw new Error('Cloned Version Not Allowd')
-  }
-  */
 
 // external map to store retry counts of messages when decryption/encryption fails
 // keep this out of the socket itself, so as to prevent a message decryption/encryption loop across socket restarts
