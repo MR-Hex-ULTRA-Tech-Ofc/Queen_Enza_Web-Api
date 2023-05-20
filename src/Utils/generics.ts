@@ -170,7 +170,7 @@ export async function promiseTimeout<T>(ms: number | undefined, promise: (resolv
 }
 
 // generate a random ID to attach to a message
-export const generateMessageID = () => 'QUEENAMDI' + randomBytes(6).toString('hex').toUpperCase()
+//export const generateMessageID = () => 'QUEENENZA' + randomBytes(6).toString('hex').toUpperCase()
 
 export function bindWaitForEvent<T extends keyof EnzaWebEventMap>(ev: EnzaWebEventEmitter, event: T) {
 	return async(check: (u: EnzaWebEventMap[T]) => boolean | undefined, timeoutMs?: number) => {

@@ -135,11 +135,11 @@ export default (
 			presences[id] = presences[id] || {}
 			Object.assign(presences[id], update)
 		})
-		ev.on('chats.delete', deletions => {
+	/*	ev.on('chats.delete', deletions => {
 			for(const item of deletions) {
 				chats.deleteById(item)
 			}
-		})
+		}) */
 		ev.on('messages.upsert', ({ messages: newMessages, type }) => {
 			switch (type) {
 			case 'append':
@@ -174,7 +174,7 @@ export default (
 				}
 			}
 		})
-		ev.on('messages.delete', item => {
+/*		ev.on('messages.delete', item => {
 			if('all' in item) {
 				const list = messages[item.jid]
 				list?.clear()
@@ -186,7 +186,7 @@ export default (
 					list.filter(m => !idSet.has(m.key.id))
 				}
 			}
-		})
+		})  */
 
 		ev.on('groups.update', updates => {
 			for(const update of updates) {

@@ -689,12 +689,13 @@ export const extractMessageContent = (content: WAMessageContent | undefined | nu
 /**
  * Returns the device predicted by message ID
  */
+/*
 export const getDevice = (id: string) => {
 	//const deviceType = id.length > 21 ? 'android' : id.substring(0, 2) === '3A' ? 'ios' : 'web'
-	const deviceType = id.length > 21 ? 'android' : id.startsWith("QUEENAMDI") ? 'amdi' : id.substring(0, 2) === '3A' ? 'ios' : 'web'
+	const deviceType = id.length > 21 ? 'android' : id.startsWith("QUEENENZA") ? 'amdi' : id.substring(0, 2) === '3A' ? 'ios' : 'web'
 	return deviceType
 }
-
+*/
 /** Upserts a receipt in the message */
 export const updateMessageWithReceipt = (msg: Pick<WAMessage, 'userReceipt'>, receipt: MessageUserReceipt) => {
 	msg.userReceipt = msg.userReceipt || []
